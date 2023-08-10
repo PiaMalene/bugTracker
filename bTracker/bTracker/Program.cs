@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using bTracker.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<bTrackerContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("bTrackerContext") ?? throw new InvalidOperationException("Connection string 'bTrackerContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
