@@ -18,11 +18,13 @@ namespace bTracker.Controllers
             return View();
         }
 
+        //privacy page
         public IActionResult Privacy()
         {
             return View();
         }
 
+        //error page
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

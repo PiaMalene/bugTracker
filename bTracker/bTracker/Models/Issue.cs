@@ -1,5 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
+//setup for the database of "issues"
+//NB! might want to change to more correct fields later. Make new branch before attempting any changes
 namespace bTracker.Models
 {
     public class Issue

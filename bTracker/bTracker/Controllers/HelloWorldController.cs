@@ -12,7 +12,7 @@ namespace bTracker.Controllers
             return View();
         }
 
-        // 
+        // welcome message
         public IActionResult Welcome(string name, int numTimes = 1)
         {
             ViewData["Message"] = "Hello " + name;
