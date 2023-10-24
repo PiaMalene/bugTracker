@@ -13,6 +13,8 @@ namespace bTracker.Models
         public DateTime Date { get; set; }
         public string? Category { get; set; }
         public decimal Severity { get; set; }
+
+      
     }
 }
 
